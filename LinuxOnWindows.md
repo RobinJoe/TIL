@@ -17,3 +17,7 @@ Windows users can locate the shadow file, adjust the user hash string, re-open b
 regular user. 
 
 The instructions I adapted were in the following stack exchange item: https://askubuntu.com/questions/772050/reset-the-password-in-ubuntu-linux-bash-in-windows 
+
+TODO:
+Write instructions on how to access the shadow file.
+
