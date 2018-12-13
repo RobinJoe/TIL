@@ -2,7 +2,7 @@
 
 from collections import Counter
 
-with open ("digital-transformation.txt", "r") as f:
+with open ("example.txt", "r") as f:
     contents = f.read().split()
     print ("Word distribution is as follows")
     print (Counter (contents))
