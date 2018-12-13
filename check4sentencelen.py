@@ -11,7 +11,7 @@ print(find_longest_sentence(["Hi there friendo.", "It has already been done.", "
 
 
 def find_longest_sentence(): #Set up the function
-    with open ("microservices.txt", "r") as f: #Open the file and read it
+    with open ("example.txt", "r") as f: #Open the file and read it
         sentence_len = [] # specify an empty variable
         for n in f: # start the for loop
             sentence_len.append((len(n), n)) # todo find out what these are for
