@@ -4,6 +4,35 @@
 
 ### December
 
+Building a pdf with Sphinx
+
+Prerequisites
+
+Install the following three packages for Ubunutu on Windows Sub system:
+
+```
+$ sudo apt-get install texlive-latex-recommended
+$ sudo apt-get install texlive-latex-extra
+$ sudo apt-get install texlive-fonts-recommended
+```
+The first two packages do take at least 20+ minutes to install. The final package may not have anything to update. 
+
+After these packages install, update the sub system:
+
+$ sudo apt-get update
+
+With these packages installed, when you have completed the ``index.rst`` file, and added in the other documents, build the 
+latex files with the following command:
+
+$ make latex
+
+Next, now that the latex files are ready to go, Sphinx can then build a pdf. Run the following command:
+
+$ make pdflatex
+
+This will take several seconds. Text will scroll past on the command line as Sphinx assembles all the latex files. When the 
+build is finished, the pdf file can be located inside the /build/latex/*.pdf directory.
+
 ### November
 
 I have been using Linux on Windows. It works, but the experience can be improved with troubleshooting content. For example what to do if you 
