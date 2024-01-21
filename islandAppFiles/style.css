@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+
+
+.islandItemWriter {
+    background-color: wheat;
+    border: 1px;
+    border-color: grey;
+    flex: auto;
+}
