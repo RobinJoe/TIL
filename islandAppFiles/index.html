@@ -6,10 +6,19 @@
         <title>Island Builder</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script href="islandScript0.js"></script>
         <link rel="stylesheet" href="style.css">
+        <script src="./islandScript0.js"></script>
     </head>
     <body>
-     <div class="islandItemWriter"></div>
+     <div class="islandItemWriter">This is working</div>
+     <label for="seasonSelect">Island season:</label>
+     <select name="season" id="seasonSelect">
+        <option value="select">Please choose your island's season</option>
+        <option value="Summer">Summer</option>
+        <option value="Autumn">Autumn</option>
+        <option value="Winter">Winter</option>
+        <option value="Spring">Spring</option>
+     </select>
+     <div id="islandContainer"></div>
     </body>
 </html>
