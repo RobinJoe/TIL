@@ -23,4 +23,5 @@ addEventListener('change', function(e) {
 
     var islandContainer1b = document.getElementById("island2ndContainer"); //Get the 2nd island information container
     islandContainer1b.appendChild(IslandWriter1b); //Apply it to the element
-})
+});
+
