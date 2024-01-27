@@ -3,26 +3,25 @@
 //document.body.appendChild(islandItemWriter);
 
 addEventListener('change', function(e) {
-    var season = document.getElementById('seasonSelect'); //Get customer first selection: season
-    
-    var islandContainer = document.getElementById('islandContainer'); //Get the island information container
+    document.getElementById('islandContainer').innerHTML = ""; //Clear the contents
 
-    var IslandWriter0a = document.createElement('div');
+    var season = document.getElementById('seasonSelect'); //Get customer first selection: season
+    var IslandWriter0a = document.createElement('div'); //Set up selection in new div element
     IslandWriter0a.innerHTML = season.value
 
-    if (islandContainer.innerHTML === "") {
-        document.islandContainer.appendChild(IslandWriter0a); //Check if there is contents, and add their selection to the container if empty
-        console.log("the div is empty, appending the customer choice")
-    } else {
-        document.getElementById('IslandContainer').innerHTML = ""; //Clear the contents and write to it, to keep just one season in the container.
-        document.islandContainer.appendChild(IslandWriter0a); //Add their selection to the container
-        console.log("The div had content, clearing it out and appending customer choice")
-    }
+    var islandContainer0a = document.getElementById("islandContainer");  //Get the island information container
+    islandContainer0a.appendChild(IslandWriter0a); //Apply it to the element
 
-    //var islandItemWriter0a = document.createElement('div'); //Set up the container to hold the selection on screen
-    //islandItemWriter0a.setAttribute('id', 'IslandContainer')
-    //islandItemWriter0a.innerHTML = season.value; //Add their selection to the container
-
-    //document.getElementById('IslandContainer').innerHTML = ""; //Clear the contents and write to it, to keep just one season in the container.
-    //document.body.appendChild(islandItemWriter0a);
 });
+
+addEventListener('change', function(e) {
+    document.getElementById('island2ndContainer').innerHTML = ""; //Clear the population size
+
+    var size = document.getElementById('sizeSelect'); //Get customer second select: size
+    var IslandWriter1b = document.createElement('div'); //Set up the selection in a new div element
+    IslandWriter1b.innerHTML = size.value
+
+    var islandContainer1b = document.getElementById("island2ndContainer"); //Get the 2nd island information container
+    islandContainer1b.appendChild(IslandWriter1b); //Apply it to the element
+});
+
